@@ -25,7 +25,7 @@ section {
 }
 
 img {
-  max-width: 400px;
+  max-width: 100%;
   display: block;
   margin-right: auto;
   border-top: 3px solid rgb(228, 182, 19);
@@ -50,6 +50,7 @@ h2 {
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  text-decoration: underline;
 }
 
 h2 a {
@@ -221,9 +222,8 @@ transition: all 0.4s ease 0s;
 
 @media screen and (max-width : 400px){
 img {
-  max-width: 400px;
+  max-width: 100%;
   display: block;
-  margin-left: 10px;
   margin-right: auto;}
 
 
@@ -231,9 +231,8 @@ img {
 
 @media screen and (max-width : 375px){
 img {
-  max-width: 375px;
+  max-width: 100%;
   display: block;
-  margin-left: 10px;
   margin-right: auto;}
 
 body {
@@ -248,9 +247,8 @@ body {
 
 @media screen and (max-width : 350px){
 img {
-  max-width: 350px;
+  max-width: 100%;
   display: block;
-  margin-left: 10px;
   margin-right: auto;}
 
 body {
@@ -264,9 +262,8 @@ body {
 
 @media screen and (max-width : 300px){
 img {
-  max-width: 300px;
+  max-width: 100%;
   display: block;
-  margin-left: 10px;
   margin-right: auto;}
 
 body {
