@@ -1,0 +1,211 @@
+body {
+  font-family: helvetica;
+  max-width: 400px;
+  margin: 5px auto;
+  background: lightgrey;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+
+  font-size: 3em;
+  text-align: center;
+  background-color: lightgrey;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 2px;
+}
+
+section {
+  margin: 20px auto 20px;
+  background: white;
+
+}
+
+img {
+  max-width: 375px;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;}
+
+p {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  color:black;
+  padding:10px 2px 10px 10px;
+}
+
+h2 {
+  margin: 25px 0;
+  font-family: helvetica;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 a {
+  text-decoration: none;
+  color:black;
+}
+
+hr {
+  height: 2px;
+  background-color: white;
+}
+
+h3 {
+  display: inline;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+  font-size:16px;
+}
+.mobile-menu {
+  display:block;
+  width:100%;
+background: white/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
+line-height: 1.6em;
+font-weight: 400;
+width:100%;
+text-align:center;
+	position: relative;
+  margin:0 auto;
+}
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+	list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:100%;
+  position: absolute;
+  background: white;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	min-width:140px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+  text-transform:uppercase;
+	background: lightgrey;
+	text-decoration: none;
+  margin-left:-5px;
+  padding: 10px 0;
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-ms-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #4db3ff;
+  background-color:lightgrey;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: lightgrey;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: lightgrey;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: black;
+	background: lightgrey;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 800px){
+  .mobile-menu .lines {
+    border-bottom: 15px double white;
+    border-top: 5px solid white;
+    content:"";
+    height: 5px;
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		display:block;
+	}
+}

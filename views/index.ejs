@@ -1,0 +1,43 @@
+<% include header %>
+
+<!--<h1>Nieuws demo homepage</h1>-->
+
+
+<!--
+<nav>
+  <h3>Categorieën:</h3>
+  <% for (var i = 0; i < categorieen.length; i++) { %>
+    <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+  <% } %>
+</nav>
+-->
+
+<nav class="mobile-menu">
+<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu">
+		<li><a href="/">Home</a></li>
+		<li><a href="/categorieen/<%- 3 %>">foto</a></li>
+		<li><a href="/categorieen/<%- 4 %>">video</a>		</li>
+		<li><a href="/categorieen/<%- 2 %>">verslagen</a></li>
+		<li><a href="/categorieen/<%- 1 %>">reviews</a></li>
+	</ul>
+</nav>
+
+	<h1> INDYREVIEW </h1>
+  <% var teller = 1; %>
+  <% nieuws.forEach(function(item){ %>
+    <section>
+        <h2>
+          <a href=/items/<%- item.id %>><%- item.titel %></a>
+        </h2>
+				<p><%- item.datum %></p>
+        <img src="/img/<%- item.afbeeldingl %>" alt="<%- item.titel %>">
+        <p>
+          <%- item.samenvatting %>
+        </p>
+    </section>
+    <% teller++;}); %>
+
+
+<% include footer %>
