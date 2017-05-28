@@ -24,20 +24,25 @@
 	</ul>
 </nav>
 
-	<h1> INDYREVIEW </h1>
+<h1> INDYREVIEW </h1>
+
   <% var teller = 1; %>
   <% nieuws.forEach(function(item){ %>
     <section>
         <h2>
           <a href=/items/<%- item.id %>><%- item.titel %></a>
         </h2>
-				<p><%- item.datum %></p>
+				<h3><%- item.datum %></h3>
         <img src="/img/<%- item.afbeeldingl %>" alt="<%- item.titel %>">
         <p>
           <%- item.samenvatting %>
         </p>
     </section>
     <% teller++;}); %>
+
+
+		<a href="http://rocky-meadow-42971.herokuapp.com/">link Heroku</a>
+
 
 
 <% include footer %>

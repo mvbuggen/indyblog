@@ -10,36 +10,44 @@ h1 {
 
   font-size: 3em;
   text-align: center;
-  background-color: lightgrey;
+  background-color:lightgrey;
   color: black;
-  padding-top: 30px;
-  padding-bottom: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 section {
-  margin: 20px auto 20px;
+  margin: 10px auto 10px;
   background: white;
+  box-shadow:1px 4px 2px #888888;
+
 
 }
 
 img {
-  max-width: 375px;
+  max-width: 400px;
   display: block;
-  margin-left: 10px;
-  margin-right: auto;}
+  margin-right: auto;
+  border-top: 3px solid rgb(228, 182, 19);
+  border-bottom: 3px solid rgb(228, 182, 19);
+
+}
 
 p {
+  font-family: 'Playfair Display', serif;
+
+  display: block;
   line-height: 1.2em;
   font-size: 0.8em;
   color:black;
-  padding:10px 2px 10px 10px;
+  padding:10px 10px 10px 10px;
 }
 
 h2 {
-  margin: 25px 0;
-  font-family: helvetica;
+  font-family: 'Playfair Display', serif;
+  margin: 15px 0;
   font-size: 1.2em;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -55,7 +63,11 @@ hr {
 }
 
 h3 {
-  display: inline;
+  font-family: 'Playfair Display', serif;
+  margin: 10px 0;
+  font-size: 0.6em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -63,10 +75,7 @@ h3 {
   margin:0;
   padding:0;
 }
-body {
-	font-family: Helvetica, Arial, sans-serif;
-  font-size:16px;
-}
+
 .mobile-menu {
   display:block;
   width:100%;
@@ -117,7 +126,7 @@ transition: all 0.4s ease 0s;
 
 /*Hover state for top level links*/
 .mobile-menu li:hover a {
-	color: #4db3ff;
+	color: rgb(228, 182, 19);
   background-color:lightgrey;
 }
 
@@ -208,4 +217,61 @@ transition: all 0.4s ease 0s;
 	.mobile-menu .show-menu {
 		display:block;
 	}
+}
+
+@media screen and (max-width : 400px){
+img {
+  max-width: 400px;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;}
+
+
+}
+
+@media screen and (max-width : 375px){
+img {
+  max-width: 375px;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;}
+
+body {
+    font-family: helvetica;
+    max-width: 375px;
+
+  }
+
+}
+
+
+
+@media screen and (max-width : 350px){
+img {
+  max-width: 350px;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;}
+
+body {
+    max-width: 350px;
+
+  }
+
+}
+
+
+
+@media screen and (max-width : 300px){
+img {
+  max-width: 300px;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;}
+
+body {
+    max-width: 300px;
+
+  }
+
 }
